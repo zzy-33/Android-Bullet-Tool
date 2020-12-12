@@ -1,5 +1,6 @@
 package com.example.android_tool
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -12,9 +13,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun dialog(view: View) {
-        AngryDialog.Builder(this)
-            .setDialogTheme("white")
-            .create()
-            .show()
+        startActivity(Intent(this, DialogActivity::class.java))
     }
 }

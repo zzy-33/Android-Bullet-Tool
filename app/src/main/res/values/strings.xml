@@ -1,4 +1,5 @@
 <resources>
-    <string name="app_name">android_tool</string>
+    <string name="app_name">Tool</string>
     <string name="angryDialog">AngryDialog</string>
+    <string name="whiteStyle">WhiteStyle</string>
 </resources>
