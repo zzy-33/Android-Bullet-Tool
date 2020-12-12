@@ -13,6 +13,7 @@ class MainActivity : AppCompatActivity() {
 
     fun dialog(view: View) {
         AngryDialog.Builder(this)
+            .setDialogTheme("white")
             .create()
             .show()
     }
