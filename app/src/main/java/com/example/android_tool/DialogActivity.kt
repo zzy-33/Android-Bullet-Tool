@@ -1,8 +1,8 @@
 package com.example.android_tool
 
 import android.os.Bundle
+import android.util.Log
 import android.view.View
-import androidx.appcompat.app.AppCompatActivity
 import com.component.AngryDialog
 
 /**
@@ -21,6 +21,12 @@ class DialogActivity : BaseActivity() {
             .setDialogTheme("white")
             .setTitle("Tips")
             .setContent("white Dialog with tips")
+            .setConfirmListener(View.OnClickListener {
+                Log.e("AngryDialog","confirm is onclick")
+            })
+            .setCancelListener(View.OnClickListener {
+                Log.e("AngryDialog","cancel is onclick")
+            })
             .create()
             .show()
     }
