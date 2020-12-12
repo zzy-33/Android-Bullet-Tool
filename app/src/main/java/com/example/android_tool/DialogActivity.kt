@@ -16,9 +16,90 @@ class DialogActivity : BaseActivity() {
         setToolbar(getString(R.string.angryDialog))
     }
 
-    fun whiteDialog(view: View) {
+    fun white1(view: View) {
         AngryDialog.Builder(this)
             .setDialogTheme("white")
+            .setTitle("Tips")
+            .setContent("white Dialog with tips")
+            .create()
+            .show()
+    }
+
+    fun white2(view: View) {
+        AngryDialog.Builder(this)
+            .setDialogTheme("white")
+            .setTitle("Tips")
+            .setContent("white Dialog with tips")
+            .setConfirm("")
+            .create()
+            .show()
+    }
+
+    fun white3(view: View) {
+        AngryDialog.Builder(this)
+            .setDialogTheme("white")
+            .setContent("white Dialog with tips")
+            .create()
+            .show()
+    }
+
+    fun white4(view: View) {
+        AngryDialog.Builder(this)
+            .setDialogTheme("white")
+            .setContent("white Dialog with tips")
+            .setConfirm("")
+            .create()
+            .show()
+    }
+
+    fun purple1(view: View) {
+        AngryDialog.Builder(this)
+            .setDialogTheme("purple")
+            .setTitle("Tips")
+            .setContent("white Dialog with tips")
+            .create()
+            .show()
+    }
+
+    fun purple2(view: View) {
+        AngryDialog.Builder(this)
+            .setDialogTheme("purple")
+            .setContent("white Dialog with tips")
+            .create()
+            .show()
+    }
+
+    fun purple3(view: View) {
+        AngryDialog.Builder(this)
+            .setDialogTheme("purple")
+            .setContent("white Dialog with tips")
+            .setConfirm("")
+            .create()
+            .show()
+    }
+
+    fun red1(view: View) {
+        AngryDialog.Builder(this)
+            .setDialogTheme("red")
+            .setTitle("Tips")
+            .setContent("white Dialog with tips")
+            .create()
+            .show()
+    }
+
+    fun red2(view: View) {
+        AngryDialog.Builder(this)
+            .setDialogTheme("red")
+            .setContent("white Dialog without the tips")
+            .setCancel("")
+            .create()
+            .show()
+    }
+
+    fun red3(view: View) {
+        AngryDialog.Builder(this)
+            .setDialogTheme("red")
+            .setContent("white Dialog without the tips")
             .create()
             .show()
     }

@@ -6,20 +6,145 @@
 
     <include layout="@layout/toolbar" />
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/whiteStyle"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
+        android:orientation="horizontal"
         android:paddingStart="20dp"
         android:paddingEnd="20dp">
 
         <TextView
             style="@style/text_Title"
-            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
             android:gravity="center"
-            android:onClick="whiteDialog"
+            android:onClick="white1"
             android:padding="5dp"
-            android:text="@string/whiteStyle" />
+            android:text="@string/white1" />
+
+        <TextView
+            style="@style/text_Title"
+            android:layout_marginEnd="20dp"
+            android:gravity="center"
+            android:onClick="white2"
+            android:padding="5dp"
+            android:text="@string/white2" />
+
+        <TextView
+            style="@style/text_Title"
+            android:gravity="center"
+            android:onClick="white3"
+            android:padding="5dp"
+            android:text="@string/white3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp">
+
+        <TextView
+            style="@style/text_Title"
+            android:layout_marginEnd="20dp"
+            android:gravity="center"
+            android:onClick="white4"
+            android:padding="5dp"
+            android:text="@string/white4" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/redStyle"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp">
+
+        <TextView
+            style="@style/text_Title"
+            android:layout_marginEnd="20dp"
+            android:gravity="center"
+            android:onClick="red1"
+            android:padding="5dp"
+            android:text="@string/red1" />
+
+        <TextView
+            style="@style/text_Title"
+            android:layout_marginEnd="20dp"
+            android:gravity="center"
+            android:onClick="red2"
+            android:padding="5dp"
+            android:text="@string/red2" />
+
+        <TextView
+            style="@style/text_Title"
+            android:gravity="center"
+            android:onClick="red3"
+            android:padding="5dp"
+            android:text="@string/red3" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/purpleStyle"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp">
+
+        <TextView
+            style="@style/text_Title"
+            android:layout_marginEnd="20dp"
+            android:gravity="center"
+            android:onClick="purple1"
+            android:padding="5dp"
+            android:text="@string/purple1" />
+
+        <TextView
+            style="@style/text_Title"
+            android:layout_marginEnd="20dp"
+            android:gravity="center"
+            android:onClick="purple2"
+            android:padding="5dp"
+            android:text="@string/purple2" />
+
+        <TextView
+            style="@style/text_Title"
+            android:gravity="center"
+            android:onClick="purple3"
+            android:padding="5dp"
+            android:text="@string/purple3" />
     </LinearLayout>
 
 </LinearLayout>
