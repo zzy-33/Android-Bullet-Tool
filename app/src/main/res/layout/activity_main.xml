@@ -16,4 +16,12 @@
         android:onClick="dialog"
         android:padding="5dp"
         android:text="@string/angryDialog" />
+    <TextView
+        style="@style/text_Title"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:onClick="toast"
+        android:padding="5dp"
+        android:text="@string/angrytoast" />
 </LinearLayout>

@@ -15,4 +15,9 @@ class MainActivity : AppCompatActivity() {
     fun dialog(view: View) {
         startActivity(Intent(this, DialogActivity::class.java))
     }
+
+    fun toast(view: View) {
+        startActivity(Intent(this, ToastActivity::class.java))
+
+    }
 }
