@@ -18,14 +18,13 @@ class DialogActivity : BaseActivity() {
 
     fun white1(view: View) {
         AngryDialog.Builder(this)
-            .setDialogTheme("white")
             .setTitle("Tips")
             .setContent("white Dialog with tips")
             .setConfirmListener(View.OnClickListener {
-                Log.e("AngryDialog","confirm is onclick")
+                Log.e("AngryDialog", "confirm is onclick")
             })
             .setCancelListener(View.OnClickListener {
-                Log.e("AngryDialog","cancel is onclick")
+                Log.e("AngryDialog", "cancel is onclick")
             })
             .create()
             .show()
@@ -33,7 +32,6 @@ class DialogActivity : BaseActivity() {
 
     fun white2(view: View) {
         AngryDialog.Builder(this)
-            .setDialogTheme("white")
             .setTitle("Tips")
             .setContent("white Dialog with tips")
             .setConfirm("")
@@ -51,7 +49,6 @@ class DialogActivity : BaseActivity() {
 
     fun white4(view: View) {
         AngryDialog.Builder(this)
-            .setDialogTheme("white")
             .setContent("white Dialog with tips")
             .setConfirm("")
             .create()
@@ -60,8 +57,12 @@ class DialogActivity : BaseActivity() {
 
     fun purple1(view: View) {
         AngryDialog.Builder(this)
-            .setDialogTheme("purple")
             .setTitle("Tips")
+            .setDialogBackground(R.drawable.shape_purple_5)
+            .setTitleStyle(R.color.white, 20F)
+            .setContentStyle(R.color.white, 14F)
+            .setCancelStyle(R.color.white, 16F)
+            .setConfirmStyle(R.color.white, 16F)
             .setContent("white Dialog with tips")
             .create()
             .show()
@@ -69,7 +70,11 @@ class DialogActivity : BaseActivity() {
 
     fun purple2(view: View) {
         AngryDialog.Builder(this)
-            .setDialogTheme("purple")
+            .setDialogBackground(R.drawable.shape_purple_5)
+            .setTitleStyle(R.color.white, 20F)
+            .setContentStyle(R.color.white, 14F)
+            .setCancelStyle(R.color.white, 16F)
+            .setConfirmStyle(R.color.white, 16F)
             .setContent("white Dialog with tips")
             .create()
             .show()
@@ -77,7 +82,11 @@ class DialogActivity : BaseActivity() {
 
     fun purple3(view: View) {
         AngryDialog.Builder(this)
-            .setDialogTheme("purple")
+            .setDialogBackground(R.drawable.shape_purple_5)
+            .setTitleStyle(R.color.white, 20F)
+            .setContentStyle(R.color.white, 14F)
+            .setCancelStyle(R.color.white, 16F)
+            .setConfirmStyle(R.color.white, 16F)
             .setContent("white Dialog with tips")
             .setConfirm("")
             .create()
