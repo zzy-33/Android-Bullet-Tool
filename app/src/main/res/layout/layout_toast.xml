@@ -12,7 +12,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
         android:gravity="center"
-        android:text="@string/whiteStyle"
+        android:text="@string/purpleStyle"
         android:textColor="@color/black"
         android:textSize="18sp" />
 
@@ -27,24 +27,24 @@
             style="@style/text_Title"
             android:layout_marginEnd="20dp"
             android:gravity="center"
-            android:onClick="white1"
+            android:onClick="purple1"
             android:padding="5dp"
-            android:text="@string/white1" />
+            android:text="@string/purple1" />
 
         <TextView
             style="@style/text_Title"
             android:layout_marginEnd="20dp"
             android:gravity="center"
-            android:onClick="white2"
+            android:onClick="purple2"
             android:padding="5dp"
-            android:text="@string/white2" />
+            android:text="@string/purple2" />
 
         <TextView
             style="@style/text_Title"
             android:gravity="center"
-            android:onClick="white3"
+            android:onClick="purple3"
             android:padding="5dp"
-            android:text="@string/white3" />
+            android:text="@string/purple3" />
     </LinearLayout>
 
 </LinearLayout>
