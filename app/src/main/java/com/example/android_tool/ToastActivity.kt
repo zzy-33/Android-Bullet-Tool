@@ -21,24 +21,21 @@ class ToastActivity : BaseActivity() {
     fun purple1(view: View) {
         AngryToast.Builder(this)
             .setContent("测试数据")
-            .create()
             .show()
     }
 
     fun purple2(view: View) {
         AngryToast.Builder(this)
             .setContent("测试数据")
-            .setTopIcon(R.drawable.arrow_back)
-            .setGravity(Gravity.CENTER, 0, 0)
-            .create()
+            .setIcon(R.drawable.arrow_back)
             .show()
     }
 
     fun purple3(view: View) {
-        val view = LayoutInflater.from(this).inflate(com.example.tool.R.layout.angry_toast, null)
         AngryToast.Builder(this)
-            .setView(view)
-            .create()
+            .setContent("测试数据")
+            .setTopIcon(R.drawable.arrow_back)
+            .setGravity(Gravity.CENTER, 0, 0)
             .show()
     }
 }
