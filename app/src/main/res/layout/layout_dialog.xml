@@ -106,6 +106,24 @@
             android:text="@string/red3" />
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp">
+
+        <TextView
+            style="@style/text_Title"
+            android:layout_marginEnd="20dp"
+            android:gravity="center"
+            android:onClick="red4"
+            android:padding="5dp"
+            android:text="@string/red4" />
+
+    </LinearLayout>
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -147,4 +165,21 @@
             android:text="@string/purple3" />
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp">
+
+        <TextView
+            style="@style/text_Title"
+            android:layout_marginEnd="20dp"
+            android:gravity="center"
+            android:onClick="purple4"
+            android:padding="5dp"
+            android:text="purple4" />
+
+    </LinearLayout>
 </LinearLayout>

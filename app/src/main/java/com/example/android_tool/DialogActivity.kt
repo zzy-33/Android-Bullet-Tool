@@ -20,6 +20,8 @@ class DialogActivity : BaseActivity() {
         AngryDialog.Builder(this)
             .setTitle("Tips")
             .setContent("white Dialog with tips")
+            .setConfirm("OK")
+            .setCancel("Cancel")
             .setConfirmListener(View.OnClickListener {
                 Log.e("AngryDialog", "confirm is onclick")
             })
@@ -34,15 +36,16 @@ class DialogActivity : BaseActivity() {
         AngryDialog.Builder(this)
             .setTitle("Tips")
             .setContent("white Dialog with tips")
-            .setConfirm("")
+            .setCancel("Cancel")
             .create()
             .show()
     }
 
     fun white3(view: View) {
         AngryDialog.Builder(this)
-            .setDialogTheme("white")
             .setContent("white Dialog with tips")
+            .setConfirm("OK")
+            .setLineView(View.GONE, View.VISIBLE)
             .create()
             .show()
     }
@@ -50,7 +53,16 @@ class DialogActivity : BaseActivity() {
     fun white4(view: View) {
         AngryDialog.Builder(this)
             .setContent("white Dialog with tips")
-            .setConfirm("")
+            .setConfirm("OK")
+            .setCancel("Cancel")
+            .create()
+            .show()
+    }
+
+    fun white5(view: View) {
+        AngryDialog.Builder(this)
+            .setContent("white Dialog with tips")
+            .setConfirm("OK")
             .create()
             .show()
     }
@@ -58,65 +70,105 @@ class DialogActivity : BaseActivity() {
     fun purple1(view: View) {
         AngryDialog.Builder(this)
             .setTitle("Tips")
-            .setDialogBackground(R.drawable.shape_purple_5)
-            .setTitleStyle(R.color.white, 20F)
-            .setContentStyle(R.color.white, 14F)
-            .setCancelStyle(R.color.white, 16F)
-            .setConfirmStyle(R.color.white, 16F)
             .setContent("white Dialog with tips")
+            .setConfirm("OK")
+            .setCancel("Cancel")
+            .setDialogBackground(R.drawable.shape_purple_5)
+            .setTitleStyle(R.color.white)
+            .setContentStyle(R.color.white)
+            .setCancelStyle(R.color.white)
+            .setConfirmStyle(R.color.white)
             .create()
             .show()
     }
 
     fun purple2(view: View) {
         AngryDialog.Builder(this)
-            .setDialogBackground(R.drawable.shape_purple_5)
-            .setTitleStyle(R.color.white, 20F)
-            .setContentStyle(R.color.white, 14F)
-            .setCancelStyle(R.color.white, 16F)
-            .setConfirmStyle(R.color.white, 16F)
+            .setTitle("Tips")
             .setContent("white Dialog with tips")
+            .setCancel("Cancel")
+            .setLineView(View.GONE, View.VISIBLE)
+            .setDialogBackground(R.drawable.shape_purple_5)
+            .setTitleStyle(R.color.white)
+            .setContentStyle(R.color.white)
+            .setCancelStyle(R.color.white)
             .create()
             .show()
     }
 
     fun purple3(view: View) {
         AngryDialog.Builder(this)
-            .setDialogBackground(R.drawable.shape_purple_5)
-            .setTitleStyle(R.color.white, 20F)
-            .setContentStyle(R.color.white, 14F)
-            .setCancelStyle(R.color.white, 16F)
-            .setConfirmStyle(R.color.white, 16F)
             .setContent("white Dialog with tips")
-            .setConfirm("")
+            .setCancel("Cancel")
+            .setLineView(View.GONE, View.VISIBLE)
+            .setDialogBackground(R.drawable.shape_purple_5)
+            .setTitleStyle(R.color.white)
+            .setContentStyle(R.color.white)
+            .setCancelStyle(R.color.white)
+            .create()
+            .show()
+    }
+
+    fun purple4(view: View) {
+        AngryDialog.Builder(this)
+            .setContent("white Dialog with tips")
+            .setCancel("Cancel")
+            .setConfirm("OK")
+            .setDialogBackground(R.drawable.shape_purple_5)
+            .setTitleStyle(R.color.white)
+            .setContentStyle(R.color.white)
+            .setCancelStyle(R.color.white)
+            .setConfirmStyle(R.color.white)
             .create()
             .show()
     }
 
     fun red1(view: View) {
         AngryDialog.Builder(this)
-            .setDialogTheme("red")
             .setTitle("Tips")
             .setContent("white Dialog with tips")
+            .setCancel("Cancel")
+            .setConfirm("OK")
+            .setLineView(View.INVISIBLE, View.GONE)
+            .setButtonPadding(30, 15, 30, 15)
+            .setCancelStyle(R.color.black_03, background = R.drawable.shape_gray_40)
+            .setConfirmStyle(R.color.white, background = R.drawable.shape_red_40)
             .create()
             .show()
     }
 
     fun red2(view: View) {
         AngryDialog.Builder(this)
-            .setDialogTheme("red")
-            .setContent("white Dialog without the tips")
-            .setCancel("")
+            .setTitle("Tips")
+            .setContent("white Dialog with tips")
+            .setConfirm("OK")
+            .setLineView(View.INVISIBLE, View.GONE)
+            .setButtonPadding(30, 15, 30, 15)
+            .setConfirmStyle(R.color.white, background = R.drawable.shape_red_40)
             .create()
             .show()
     }
 
     fun red3(view: View) {
         AngryDialog.Builder(this)
-            .setDialogTheme("red")
-            .setContent("white Dialog without the tips")
+            .setContent("white Dialog with tips")
+            .setCancel("Cancel")
+            .setConfirm("OK")
+            .setLineView(View.INVISIBLE, View.GONE)
+            .setButtonPadding(30, 15, 30, 15)
+            .setCancelStyle(R.color.black_03, background = R.drawable.shape_gray_40)
+            .setConfirmStyle(R.color.white, background = R.drawable.shape_red_40)
             .create()
             .show()
     }
 
+    fun red4(view: View) {
+        AngryDialog.Builder(this)
+            .setContent("white Dialog with tips")
+            .setConfirm("OK")
+            .setLineView(View.INVISIBLE, View.GONE)
+            .setButtonPadding(30, 15, 30, 15)
+            .setConfirmStyle(R.color.white, background = R.drawable.shape_red_40)            .create()
+            .show()
+    }
 }

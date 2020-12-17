@@ -20,7 +20,7 @@ class ToastActivity : BaseActivity() {
 
     fun purple1(view: View) {
         AngryToast.Builder(this)
-            .setIconFont("warn")
+            .setIconFont("info")
             .setContent("测试数据")
             .show()
     }
