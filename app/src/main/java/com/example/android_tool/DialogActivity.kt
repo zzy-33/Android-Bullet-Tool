@@ -25,9 +25,6 @@ class DialogActivity : BaseActivity() {
             .setConfirmListener(View.OnClickListener {
                 Log.e("AngryDialog", "confirm is onclick")
             })
-            .setCancelListener(View.OnClickListener {
-                Log.e("AngryDialog", "cancel is onclick")
-            })
             .create()
             .show()
     }
@@ -37,6 +34,9 @@ class DialogActivity : BaseActivity() {
             .setTitle("Tips")
             .setContent("white Dialog with tips")
             .setCancel("Cancel")
+            .setCancelListener(View.OnClickListener {
+                Log.e("AngryDialog", "cancel is onclick")
+            })
             .create()
             .show()
     }
@@ -59,27 +59,19 @@ class DialogActivity : BaseActivity() {
             .show()
     }
 
-    fun white5(view: View) {
-        AngryDialog.Builder(this)
-            .setContent("white Dialog with tips")
-            .setConfirm("OK")
-            .create()
-            .show()
-    }
-
     fun purple1(view: View) {
-        AngryDialog.Builder(this)
-            .setTitle("Tips")
-            .setContent("white Dialog with tips")
-            .setConfirm("OK")
-            .setCancel("Cancel")
-            .setDialogBackground(R.drawable.shape_purple_5)
-            .setTitleStyle(R.color.white)
-            .setContentStyle(R.color.white)
-            .setCancelStyle(R.color.white)
-            .setConfirmStyle(R.color.white)
-            .create()
-            .show()
+            AngryDialog.Builder(this)
+                .setTitle("Tips")
+                .setContent("white Dialog with tips")
+                .setConfirm("OK")
+                .setCancel("Cancel")
+                .setDialogBackground(R.drawable.shape_purple_5)
+                .setTitleStyle(R.color.white)
+                .setContentStyle(R.color.white)
+                .setCancelStyle(R.color.white)
+                .setConfirmStyle(R.color.white)
+                .create()
+                .show()
     }
 
     fun purple2(view: View) {
